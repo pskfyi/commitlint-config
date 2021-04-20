@@ -15,10 +15,11 @@ module.exports = {
     "footer-leading-blank": [2, "always"],
     // Set max length of first line to 72 chars for GitHub alignment.
     "header-max-length": [2, "always", 72],
-    // Scope should always be lowercase, always present, and one of the values
-    // provided to scope-enum
+    // When present, scope should always be lowercase.
     "scope-case": [2, "always", "lower-case"],
-    "scope-empty": [2, "never"],
+    // Scope may be omitted.
+    "scope-empty": [0, "never"],
+    // When present, scope should be one of these values.
     "scope-enum": [
       2,
       "always",
@@ -35,11 +36,10 @@ module.exports = {
     "subject-case": [0],
     // Subject is required.
     "subject-empty": [2, "never"],
-    // Type must be lowercase.
+    // Type should always be lowercase, always present, and one of the values
+    // provided to scope-enum
     "type-case": [2, "always", "lower-case"],
-    // Type may be omitted.
-    "type-empty": [0, "never"],
-    // When present, type should be one of these values.
+    "type-empty": [2, "never"],
     "type-enum": [
       2,
       "always",

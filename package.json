@@ -1,6 +1,6 @@
 {
   "name": "@pskfyi/commitlint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opinionated shareable commitlint config.",
   "main": "commitlint.config.js",
   "repository": {
